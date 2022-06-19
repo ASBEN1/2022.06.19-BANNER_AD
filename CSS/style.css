@@ -1,0 +1,207 @@
+/*style.css*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link { 
+    color:rgb(255, 255, 255); 
+}
+
+a:visited { 
+    color:rgb(255, 255, 255); 
+}
+
+/*-------------------------------------------------------*/
+
+#container {
+    width: 960px;
+    height: 320px;
+    overflow: hidden;
+}
+
+/*-------------------------------------------------------*/
+
+#container > .mainbg01 {
+    background-image: url("../images/BI\ 01-1\ BG.gif");
+    width: 960px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+
+#container .mainbg01:hover {
+    width: 960px;
+    height: 100%;
+    transition-duration: 0.5s;
+    background-image: 
+    url("../images/BI-02-1-BG01.gif");
+
+}
+
+.mainbg01:hover .names {
+    transform: translate(370px, 1.5px);
+}
+
+.h1 {
+    position: relative;
+}
+
+.h1 > .title {
+    position: absolute;
+    color: #fff;
+    text-shadow: 0 0 8px #000;
+    left: 34%;
+    top: 310px;
+    font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    animation-name: title_ani;
+    animation-duration: 14s;
+    animation-direction: alternate;
+    animation-iteration-count: inherit;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes title_ani{
+    0% {
+        transform: translate(0);
+    }
+
+    75%{
+        transform: translate(0, -10px);
+    }
+
+    85% {
+        transform: translate(0, -150px);
+    }
+
+    98% {
+        transform: translate(0, -150px);
+    }
+
+    100% {
+        transform: translate(0, -10px);
+    }
+
+    150% {
+        transform: translate(0, -10px);
+    }
+
+}
+
+/*-------------------------------------------------------*/
+
+#container > #company {
+    position: relative;
+}
+
+#container > #company > .comp {
+    /*border: 2px solid #000;*/
+    position: absolute;
+    bottom: 10px;
+    left: -340px;
+    animation-name: com_ani;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes com_ani{
+    from {
+        margin-left: 0;
+    }
+    to{
+        margin-left: 350px;
+    }
+}
+
+#company .comp .com1 {
+    margin-right: 20px;
+}
+
+/*-------------------------------------------------------*/
+
+#container > #icon {
+    position: relative;
+}
+
+#container > #icon > .ico {
+    right: -340px;
+    bottom: 10px;
+    position: absolute;
+    /*border: 2px solid #000;*/
+    animation-name: icon_ani;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes icon_ani{
+    from {
+        margin-right: 0;
+    }
+    to{
+        margin-right: 350px;
+    }
+}
+
+#icon .ico .icons {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------------------*/
+
+#btn01 {
+    position: relative;
+}
+
+button {
+    /*border: 2px solid #000;*/
+    bottom: -150px;
+    left: 410px;
+    position: absolute;
+    background: #009e00;
+    width: 140px;
+    height: 40px;
+    font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    animation-name: btn_ani;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border: none;
+    box-shadow: 0 0 4px #000;
+}
+
+@keyframes btn_ani{
+    from {
+        margin-bottom: 0;
+    }
+    to{
+        margin-bottom: 160px;
+    }
+}
+
+button:hover {
+    background: #191911;
+    box-shadow: 0px 0px 4px #fff;
+}
+
+/*-------------------------------------------------------*/
